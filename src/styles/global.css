@@ -16,4 +16,8 @@
 @theme {
   --font-lato: "Lato", sans-serif;
   --font-montserrat: "Montserrat", sans-serif;
+  --color-base: "#F5F5F5";
+  --color-text: "#2B2B2B";
+  --color-accent-blue: "#1E3A5F";
+  --color-accent-yellow: "#FFC107";
 }
