@@ -1,22 +1,35 @@
+---
+import "../styles/global.css";
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<title>Seguros Agsan -- Agente de Seguros Generali</title>
 	</head>
-	<body>
+	<body class="font-montserrat typography">
+		<header
+			class="p-2 md:px-7 md:py-5 flex flex-row items-center border-b-2 border-base text-accent-blue font-lato"
+		>
+			<a href="/" class="flex flex-row items-center gap-2">
+				<img src="/favicon.png" alt="Seguros Agsan Icon" class="w-8" />
+				<h1 class="text-xl md:text-2xl font-bold">Seguros Agsan</h1>
+			</a>
+			<nav class="md:max-w-[50%]">
+				<ul class="flex flex-row items-center text-right text-xl font-semibold">
+					<li class=""><a href="">Particulares</a></li>
+					<li><a href="">Empresas</a></li>
+					<li><a href="">Autónomos</a></li>
+					<li><a href="">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
 		<slot />
+		<footer><nav></nav></footer>
 	</body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<script></script>
