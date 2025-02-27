@@ -10,16 +10,17 @@ import "../styles/global.css";
 		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<title>Seguros Agsan -- Agente de Seguros Generali</title>
 	</head>
-	<body class="font-montserrat typography">
+	<body class="font-montserrat">
 		<header
-			class="p-2 md:px-7 md:py-5 flex flex-row items-center border-b-2 border-base text-accent-blue font-lato"
+			class="sticky top-0 flex flex-row items-center font-lato
+			md:px-7 md:py-5 text-okcl-blue justify-between"
 		>
 			<a href="/" class="flex flex-row items-center gap-2">
 				<img src="/favicon.png" alt="Seguros Agsan Icon" class="w-8" />
 				<h1 class="text-xl md:text-2xl font-bold">Seguros Agsan</h1>
 			</a>
 			<nav class="md:max-w-[50%]">
-				<ul class="flex flex-row items-center text-right text-xl font-semibold">
+				<ul class="flex flex-row gap-10 items-center text-xl font-semibold">
 					<li class=""><a href="">Particulares</a></li>
 					<li><a href="">Empresas</a></li>
 					<li><a href="">Autónomos</a></li>
@@ -27,7 +28,9 @@ import "../styles/global.css";
 				</ul>
 			</nav>
 		</header>
-		<slot />
+		<main>
+			<slot />
+		</main>
 		<footer><nav></nav></footer>
 	</body>
 </html>
