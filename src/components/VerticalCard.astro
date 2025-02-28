@@ -1,0 +1,39 @@
+---
+interface Props {
+  title: string;
+  bgUrl: string;
+  href: string;
+}
+const { title, bgUrl, href } = Astro.props;
+---
+
+<!-- GETS THE ASTRO.PROPS AND USES IT AS A VARIABLE IN CSS -->
+<style define:vars={{ bgUrl }}>
+  .bgurl {
+    background-image: var(--bgUrl);
+  }
+</style>
+<div
+  class="bgurl
+  bg-no-repeat
+  rounded-md
+  shadow-md
+  shadow-black
+  p-6
+  max-w-2xs
+  justify-end
+  flex
+  flex-col
+  min-h-[60dvh]
+  min-w-[18dvw]"
+>
+  <h2 class="text-xl text-center font-semibold text-okcl-base">
+    {title}
+  </h2>
+  <a
+    href={href}
+    class="mt-4 bg-okcl-red text-center text-white px-4 py-2 rounded-lg hover:bg-red-600 hover:scale-105 cursor-pointer transition"
+  >
+    Saber Mas
+  </a>
+</div>
