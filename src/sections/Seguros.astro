@@ -1,0 +1,35 @@
+---
+import VerticalCard from "../components/VerticalCard.astro";
+import HomeCoche from "/public/fotos/seguros/Home_coche_300x450.webp";
+import HomeHogar from "/public/fotos/seguros/Home_Hogar_300x450.webp";
+import HomeVida from "/public/fotos/seguros/Home_vida_300x450.webp";
+import HomeComunidades from "/public/fotos/seguros/Home_comunidades_300x450.webp";
+---
+
+<section class="flex flex-col justify-center items-center py-10 bg-okcl-base">
+  <p class="text-3xl text-center font-semibold text-okcl-blue">
+    ¿En que puedo ayudarte?
+  </p>
+  <div class="flex flex-row gap-10 justify-evenly py-10">
+    <VerticalCard
+      title="Seguros de Coche"
+      bgUrl={`url(${HomeCoche.src})`}
+      href="/seguros/Seguros%20de%20Coche"
+    />
+    <VerticalCard
+      title="Seguros de Hogar"
+      bgUrl={`url(${HomeHogar.src})`}
+      href="/seguros/Seguros%20de%20Hogar"
+    />
+    <VerticalCard
+      title="Seguros de Vida"
+      bgUrl={`url(${HomeVida.src})`}
+      href="/seguros/Seguros%20de%20Vida"
+    />
+    <VerticalCard
+      title="Seguros de Comunidades"
+      bgUrl={`url(${HomeComunidades.src})`}
+      href="/seguros/Seguros%20de%20Comunidades"
+    />
+  </div>
+</section>
